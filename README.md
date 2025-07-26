@@ -1,53 +1,123 @@
-# Heart-Disease-Prediction
-HEART DISEASE PREDICTION
-GOAL
-Implementing classification models that can be used to predict the likelihood of a heart disease.
+# ❤️ Heart Disease Prediction – Machine Learning Project
 
-DATASET
-https://www.kaggle.com/rishidamarla/heart-disease-prediction
+![Made with Python](https://img.shields.io/badge/Made%20with-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Executed on Jupyter Notebook](https://img.shields.io/badge/Executed%20on-Jupyter-orange?style=for-the-badge&logo=Jupyter&logoColor=white)
+![Status: Completed](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
-This data comes from the University of California Irvine's Machine Learning Repository.
+This repository contains my project on **Heart Disease Prediction**, where I used various classification algorithms to predict the likelihood of heart disease in patients based on health-related features. The goal is to leverage data and machine learning to support preventive healthcare.
 
-DESCRIPTION
-The aim is to use this dataset to predict which patients are most likely to suffer from a heart disease in the near future using the features given.
+---
 
-WORK DONE
-Analyzed the data, searched for missing values, seperated categorical and continous data.
-Performed Exploratory Data Analysis, wherein, I plotted count plots for categorical data and bar plots and distribution plot for continuous data with respect to values of Heart Disease ('Presence' or 'Absence'). Apart from that, a correlation heatmap was also plotted.
-Encoded categorical data and scaled continuous data.
-Split the dataset into Train and Test data.
-Trained model with the following algorithms:
-Logistic Regression
-Naive Bayes Classifier
-Support Vector Classifier
-KNN Classifier
-Decision Tree Classifier
-Random Forest Classifier
-XGBoost Classifier
-Evaluated the accuracies of models, visualised them and stored them in a dataframe.
-Also evaluated the performance of the model with highest accuracy using confusion matrix and classification report.
-MODELS USED
-Logistic Regression - Logistic regression is a machine learning algorithm for classification. In this algorithm, the probabilities describing the possible outcomes of a single trial are modelled using a logistic function. It is most useful for understanding the influence of several independent variables on a single outcome variable.
-Naive Bayes Classifier - Naive Bayes algorithm based on Bayes’ theorem with the assumption of independence between every pair of features. This algorithm requires a small amount of training data to estimate the necessary parameters. Naive Bayes classifiers are extremely fast compared to more sophisticated methods.
-Support Vector Classifier - Support vector machine is a representation of the training data as points in space separated into categories by a clear gap that is as wide as possible. New examples are then mapped into that same space and predicted to belong to a category based on which side of the gap they fall. It is effective in high dimensional spaces and uses a subset of training points in the decision function, so it is also memory efficient.
-K-nearest neighbors Classifier - It is a simple algorithm to understand and can be used for classification analysis. Classification is computed from a simple majority vote of the K nearest neighbours of each point. This algorithm is simple to implement, robust to noisy training data, and effective if training data is large.
-Decision Tree Classifier - Given a data of attributes together with its classes, a decision tree produces a sequence of rules that can be used to classify the data. Decision Tree is simple to understand and visualise, requires little data preparation, and can handle both numerical and categorical data.
-Random Forest Classifier - Random forest classifier fits a number of decision trees on various sub-samples of datasets and uses average to improve the predictive accuracy of the model and controls over-fitting. The sub-sample size is always the same as the original input sample size but the samples are drawn with replacement. It results in reduction in over-fitting and random forest classifier is more accurate than decision trees in most cases.
-XGBoost Classifier - XGBoost is a popular gradient-boosting library for GPU training, distributed computing, and parallelization. It’s precise, it adapts well to all types of data and problems, it has excellent documentation, and overall it’s very easy to use.
-LIBRARIES NEEDED
-Numpy
-Pandas
-Matplotlib
-Seaborn
-Scikit-learn
-ACCURACIES
-Model	Accuracy
-1. Logistic Regression	83.950617 %
-2. Naive Bayes	82.716049 %
-3. Support Vector	79.012346 %
-4. K Nearest Neighbours	83.950617 %
-5. Decision Tree	80.246914 %
-6. Random Forest	85.185185 %
-7. XGBoost	80.246914 %
-CONCLUSION
-Random Forest Classifier had the highest accuracy out of all the others, followed by KNN and Logistic Regression. Through this project, I learned how to apply various classification algorithms and analyse their performance by using confusion matrix and classification report. Heart disease is one of the leadinng causes of death in the world. This dataset and model can be used and further improved by healthcare industry to prevent the risks of of having a heart attack or stroke.
+## 🧠 Project Goal
+
+To build and evaluate classification models that can predict the presence of heart disease based on medical and demographic attributes of patients.
+
+---
+
+## 📂 Dataset
+
+- **Source:** [Kaggle – Heart Disease Prediction Dataset](https://www.kaggle.com/rishidamarla/heart-disease-prediction)  
+- **Origin:** UCI Machine Learning Repository  
+- **Target Variable:** `Heart Disease` (1 = Presence, 0 = Absence)
+
+---
+
+## 🔍 Project Description
+
+The dataset contains patient health records including age, sex, chest pain type, cholesterol level, resting blood pressure, fasting blood sugar, ECG results, and more.  
+
+We aim to build models that can identify patients at risk of heart disease using these features. The work done includes:
+
+- Data cleaning and handling missing values
+- Separating categorical and continuous variables
+- Exploratory Data Analysis (EDA):
+  - Count plots, bar plots, distribution plots
+  - Correlation heatmap
+- Data preprocessing:
+  - Encoding categorical features
+  - Feature scaling
+- Train-test split
+- Model training using multiple classification algorithms
+- Performance comparison using accuracy, confusion matrix, and classification report
+
+---
+
+## 🧪 Models Trained
+
+### ✅ Logistic Regression  
+A statistical method that models the probability of a binary outcome using the logistic function.
+
+### ✅ Naive Bayes Classifier  
+A probabilistic model based on Bayes’ theorem, assuming independence between features. Fast and effective.
+
+### ✅ Support Vector Classifier (SVC)  
+Separates data using hyperplanes in a high-dimensional space, suitable for complex but small to medium-sized datasets.
+
+### ✅ K-Nearest Neighbors (KNN)  
+A non-parametric algorithm that classifies based on the majority class among the k-nearest data points.
+
+### ✅ Decision Tree Classifier  
+Builds a flowchart-like structure of decisions, useful for interpretability.
+
+### ✅ Random Forest Classifier  
+An ensemble of decision trees with better generalization, less overfitting, and higher accuracy.
+
+### ✅ XGBoost Classifier  
+A powerful gradient boosting technique optimized for performance and scalability.
+
+---
+
+## 📚 Libraries Used
+
+- `numpy`
+- `pandas`
+- `matplotlib`
+- `seaborn`
+- `scikit-learn`
+- `xgboost`
+
+---
+
+## 📊 Model Accuracies
+
+| Model                  | Accuracy       |
+|------------------------|----------------|
+| Logistic Regression    | 83.95%         |
+| Naive Bayes            | 82.72%         |
+| Support Vector         | 79.01%         |
+| K Nearest Neighbours   | 83.95%         |
+| Decision Tree          | 80.25%         |
+| Random Forest          | 🏆 85.18%       |
+| XGBoost                | 80.25%         |
+
+> 🟢 **Random Forest Classifier** gave the best accuracy among all models.
+
+---
+
+## 📝 Conclusion
+
+- Random Forest was the top performer in terms of accuracy, followed closely by KNN and Logistic Regression.
+- This project strengthened my understanding of classification techniques, evaluation metrics, and model comparison.
+- Given the serious global impact of heart disease, such models could assist healthcare providers in early detection and preventive action.
+
+---
+
+## 🚀 Future Improvements
+
+- Deploy the best-performing model via a web app using **Streamlit** or **Flask**
+- Apply **hyperparameter tuning** and **cross-validation**
+- Handle class imbalance using **SMOTE** or **weighted loss functions**
+- Integrate real-time data from smart devices or medical records
+
+---
+
+## 👤 Author
+
+**Kanishka Chouhan**  
+Aspiring Data Scientist  
+
+
+---
+
+> 📌 *Note: This project is for academic and learning purposes. The dataset is not suitable for clinical decision-making without further validation.*
+
