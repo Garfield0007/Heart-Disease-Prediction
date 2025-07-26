@@ -104,7 +104,6 @@ A powerful gradient boosting technique optimized for performance and scalability
 
 ## 🚀 Future Improvements
 
-- Deploy the best-performing model via a web app using **Streamlit** or **Flask**
 - Apply **hyperparameter tuning** and **cross-validation**
 - Handle class imbalance using **SMOTE** or **weighted loss functions**
 - Integrate real-time data from smart devices or medical records
